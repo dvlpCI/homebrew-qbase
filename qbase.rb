@@ -9,8 +9,8 @@ class Qbase < Formula
   def install
     # Install script to bin
     # bin.install "helloworld.sh"
-    bin.install "qbase"
-    lib.install Dir["*"] # 记得添加lib目录，并将源码存放于lib里的src下
+    bin.install "qbase" # 将 QBase 软件包解压缩，并将 qbase 可执行文件安装到 /usr/local/bin 目录中。
+    # lib.install Dir["*"] # 记得添加lib目录，并将源码存放于/usr/local/lib里的src下
   end
 
 
