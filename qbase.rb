@@ -1,8 +1,8 @@
 class Qbase < Formula
   desc "QBase:脚本底层基础库"
   homepage "https://github.com/dvlpCI/script-qbase"
-  url "https://github.com/dvlpCI/script-qbase/archive/0.0.4.tar.gz"
-  sha256 "815ce2d6f25e585b015ef2eef7be709939b98fab6d88be2178574196f1faeded"
+  url "https://github.com/dvlpCI/script-qbase/archive/0.0.5.tar.gz"
+  sha256 "cbe2e92cfa75a96428aa0f879e4210199c01d8ee8ebf67a94940ea226cc4a9e2"
   # shasum -a 256 xxxx.tar.gz
   # version /(\d+\.\d+\.\d+)/  # 从 URL 中提取版本号
 
