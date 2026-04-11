@@ -1,5 +1,8 @@
 class Qbase < Formula
-  desc "QBase:脚本底层基础库"
+# Homebrew 要求：
+# 文件名: qbase.rb （小写）
+# 类名: Qbase （首字母大写，但第二个字母小写）
+  desc "Qbase:脚本底层基础库"
   homepage "https://github.com/dvlpCI/script-qbase"
 
   version "0.8.0"

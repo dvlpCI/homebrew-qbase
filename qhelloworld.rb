@@ -1,5 +1,8 @@
-class QHelloworld < Formula
-  desc "QHelloworld: 尝试创建 homebrew tap 的样例"
+class Qhelloworld < Formula
+# Homebrew 要求：
+# 文件名: qhelloworld.rb （小写）
+# 类名: Qhelloworld （首字母大写，但第二个字母小写）
+  desc "Qhelloworld: 尝试创建 homebrew tap 的样例"
   homepage "https://github.com/dvlpCI/script-qbase"
   url "https://github.com/dvlpCI/script-qbase/archive/qhelloworld-0.0.1.tar.gz"
   sha256 "414f995ecd28a4cbdeac0f4954d20d1b77c7b868101cfe8b1959218a15c41f8b"
