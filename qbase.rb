@@ -9,7 +9,7 @@ class Qbase < Formula
   # revision 1  # 版本号不变，但 revision 递增，会触发升级
   url "https://github.com/dvlpCI/script-qbase/archive/#{version}.tar.gz"
   # url "https://github.com/dvlpCI/script-qbase/archive/0.9.0.tar.gz"
-  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  sha256 "973fad087357d2c2d7d1ce200630a641a1aa449ae61696970e03a9576ec7755a"
   # shasum -a 256 xxxx.tar.gz
   # version /(\d+\.\d+\.\d+)/  # 从 URL 中提取版本号
 
