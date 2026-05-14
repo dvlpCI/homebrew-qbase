@@ -1,0 +1,83 @@
+{
+    "custom": [
+        {
+            "type": "command",
+            "des": "自定义命令的操作",
+            "values": [
+                {
+                    "des": "增加自定义的命令",
+                    "key": "add custom command",
+                    "command": "open $QBASE_CUSTOM_MENU"
+                }
+            ]
+        },
+        {
+            "type": "normal",
+            "des": "自定义要执行的普通脚本",
+            "values": [
+                {
+                    "des": "输出当前目录下的文件",
+                    "key": "ls",
+                    "command": "ls"
+                },
+                {
+                    "des": "查看 pod 的版本",
+                    "key": "pod --version",
+                    "command": "pod --version"
+                },
+                {
+                    "des": "查看 ~/.ssh 文件夹",
+                    "key": "open ~/.ssh",
+                    "command": "open ~/.ssh"
+                },
+                {
+                    "des": "查看 homebrew 的 Taps 文件夹",
+                    "key": "open /opt/homebrew/Library",
+                    "command": "open /opt/homebrew/Library"
+                },
+                {
+                    "des": "查看 Project 文件",
+                    "key": "goProject",
+                    "command": "open ~/Project/"
+                },
+                {
+                    "des": "查看 pp 文件(路径的斜杠，通过将整个路径包在\"\"中)",
+                    "key": "goPP(方法1)",
+                    "command": "open \"~/Library/MobileDevice/Provisioning Profiles/\""
+                },
+                {
+                    "des": "查看 pp 文件(路径的斜杠，通过再加个斜杠来转义)",
+                    "key": "goPP(方法2)",
+                    "command": "open ~/Library/MobileDevice/Provisioning\\ Profiles/"
+                },
+                {
+                    "des": "查看压缩包结构，避免使用系统解压工具导致被默认解压到与压缩包同名的文件夹内，而导致看不到原本内容是对文件夹内的进行压缩，还是对文件夹进行压缩",
+                    "key": "unzip -q xxx.zip 或 unar -e GBK xxx.zip(需先 brew install unar 安装)",
+                    "command": "echo \"unzip -q /path/to/your/yourfilename.zip\" 或 \"unar -e GBK /path/to/your/yourfilename.zip(需先 brew install unar 安装)\""
+                }
+            ]
+        },
+        {
+            "type": "git",
+            "des": "git命令",
+            "values": [
+                {
+                    "des": "大概命令： ② git checkout -b test/ad  ④ git push -u origin test/ad",
+                    "key": "查看完整的如何本地git提交的命令",
+                    "command": "echo \"①查看远程是否已有要关联的本地分支 git branch -r \\n②创建本地分支 git checkout -b test/ad \\n③添加并提交更改：git add . && git commit -m \"Initial commit for test/ad\" \\n④推送到远程分支 git push -u origin test/ad \""
+                }
+            ]
+        },
+        {
+            "type": "usual",
+            "des": "自定义要执行的日常脚本",
+            "values": [
+                {
+                    "des": "打开上传包的网站(pgyer)",
+                    "key": "打开上传包的网站(pgyer)",
+                    "command": "open https://www.pgyer.com/"
+                }
+            ]
+        }
+    ]
+}
