@@ -6,28 +6,26 @@ class Qbase < Formula
   homepage "https://github.com/dvlpCI/script-qbase"
 
   version "0.9.35"
-  # revision 1  # 版本号不变，但 revision 递增，会触发升级
+  revision 1  # 改为本地编译，避免 Gatekeeper 隔离警告
   url "https://github.com/dvlpCI/script-qbase/archive/#{version}.tar.gz"
-  # url "https://github.com/dvlpCI/script-qbase/archive/0.9.0.tar.gz"
   sha256 "46f87d4d5379d887afc2a62104bad21bf578e5694819df4de69b7e98b9245707"
-  # shasum -a 256 xxxx.tar.gz
-  # version /(\d+\.\d+\.\d+)/  # 从 URL 中提取版本号
+
+  depends_on "shc" => :build
 
   def install
-    # Install script to bin
-    # bin.install "helloworld.sh"
-    bin.install "qbase" # 将 QBase 软件包解压缩，并将 qbase 可执行文件安装到 /usr/local/bin 目录中。
-    (prefix/"bin").install Dir["*"] #  不在[/usr/local/lib] 、 在[/usr/local/Cellar/qbase/0.0.3/bin]
+    system "shc", "-r", "-f", "qbase.sh"
+    mv "qbase.sh.x", "qbase"
+    rm_f "qbase.sh.x.c"
+    system "codesign", "--force", "--sign", "-", "qbase"
+    bin.install "qbase"
+    (prefix/"bin").install Dir["*"]
   end
 
-
   def uninstall
-    # rm "#{bin}/helloworld.sh"
     rm "#{bin}/qbase"
   end
 
   test do
-    # Test your script
     system "#{bin}/qbase", "--version"
   end
 end
