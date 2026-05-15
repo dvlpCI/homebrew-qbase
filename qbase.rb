@@ -5,10 +5,9 @@ class Qbase < Formula
   desc "Qbase:脚本底层基础库"
   homepage "https://github.com/dvlpCI/script-qbase"
 
-  version "0.9.35"
-  revision 1  # 改为本地编译，避免 Gatekeeper 隔离警告
+  version "0.9.36"
   url "https://github.com/dvlpCI/script-qbase/archive/#{version}.tar.gz"
-  sha256 "46f87d4d5379d887afc2a62104bad21bf578e5694819df4de69b7e98b9245707"
+  sha256 "1b2b5ebb641fed0a2ce678fb1fe4dabf789d0fca86ca6a2ee33d126c6bc3f8eb"
 
   depends_on "shc" => :build
 
