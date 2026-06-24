@@ -5,9 +5,9 @@ class Qbase < Formula
   desc "Qbase:脚本底层基础库"
   homepage "https://github.com/dvlpCI/script-qbase"
 
-version "0.9.47"
+version "0.9.48"
 url "https://github.com/dvlpCI/script-qbase/archive/#{version}.tar.gz"
-sha256 "e58b43d3d5978b6ccf820c0132e5b6062f73662b9e5154481ca840328169f2c6"
+sha256 "d73bd04df60142cba13ace4e8dd533f2e5e73a983fe9b6c5d80deae2c7217889"
 
   depends_on "shc" => :build
 
